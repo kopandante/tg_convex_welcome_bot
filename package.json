@@ -1,0 +1,21 @@
+{
+	"name": "tg_convex_welcome_bot",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"dev": "bunx convex dev",
+		"setup-webhook": "bun scripts/setup-webhook.ts",
+		"check": "biome check .",
+		"fix": "biome check --fix ."
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.3.14",
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"convex": "^1.31.7"
+	}
+}
